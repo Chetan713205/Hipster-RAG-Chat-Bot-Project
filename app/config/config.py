@@ -6,7 +6,6 @@ load_dotenv()
 
 HF_TOKEN = os.environ.get("HF_TOKEN") 
 HUGGINGFACE_REPO_ID = os.environ.get("HUGGINGFACE_REPO_ID") 
-DB_PATH = "vectorstore/db_faiss"
 CHUNK_SIZE = 500
 CHUNK_OVERLAP = 50 
 
