@@ -1,3 +1,5 @@
 myenv/
-.env/
-Hipster_Project.egg-info/".env" 
+Hipster_Project.egg-info/
+.env
+
+".env" 
