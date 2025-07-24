@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=.0"/>
+  <title✈️ AI Airport Chatbot</title>
+  <style>
+    /* Base Reset & Typography */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #00aaff 0%, #0055aa 100%);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+    .chat-container {
+      background: #fff;
+      width: 100%;
+      max-width: 720px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    .chat-header {
+      background: #0077cc;
+      color: #fff;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .chat-header h1 {
+      font-size: 1.5rem;
+    }
+    .chat-header .logo {
+      width: 32px;
+      height: 32px;
+    }
+
+    /* Chat box */
+    #chat-box {
+      flex-grow: 1;
+      padding: 1rem;
+      overflow-y: auto;
+      background: #f9faff;
+    }
+    .message {
+      margin-bottom: 1rem;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      max-width: 80%;
+      position: relative;
+      word-wrap: break-word;
+    }
+    .message.user {
+      align-self: flex-end;
+      background: #cfe4ff;
+      border-bottom-right-radius: 0;
+    }
+    .message.assistant {
+      align-self: flex-start;
+      background: #e5e5e5;
+      border-bottom-left-radius: 0;
+    }
+    .message:not(:last-child)::after {
+      content: '';
+      display: block;
+      margin-top: 0.25rem;
+      height: 1px;
+      background: rgba(0,0,0,0.05);
+    }
+    .message strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+
+    /* Input area */
+    .chat-input {
+      background: #fff;
+      padding: 1rem;
+      border-top: 1px solid #ececec;
+      display: flex;
+      gap: 0.5rem;
+    }
+    .chat-input textarea {
+      flex-grow: 1;
+      resize: none;
+      height: 3.5rem;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .chat-input button {
+      background: #0077cc;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0 1.25rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .chat-input button:hover {
+      background: #005fa3;
+    }
+
+    /* Clear button */
+    .clear-btn {
+      background: transparent;
+      border: none;
+      color: #0077cc;
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      align-self: flex-end;
+      padding: 0.5rem 1rem;
+    }
+    .clear-btn:hover {
+      color: #005fa3;
+    }
+
+    /* Error message */
+    .error {
+      color: #d8000c;
+      background: #ffd2d2;
+      padding: 0.75rem;
+      border-radius: 6px;
+      margin: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <!-- Header with airport icon -->
+    <header class="chat-header">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/airport.png" alt="Airport Icon" class="logo"/>
+      <h1>✈️ AI Airport Chatbot</h1>
+    </header>
+
+    <!-- Error display -->
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% endif %}
+
+    <!-- Chat messages -->
+    <div id="chat-box">
+      {% for msg in messages %}
+        <div class="message {{ msg.role }}">
+          <strong>{{ msg.role|capitalize }}:</strong>
+          {{ msg.content | safe | nl2br }}
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Input forms -->
+    <form method="post" action="{{ url_for('index') }}" class="chat-input">
+      <textarea name="prompt" placeholder="Ask about flights, arrivals, departures..." required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <form method="get" action="{{ url_for('clear') }}">
+      <button type="submit" class="clear-btn">Clear Chat</button>
+    </form>
+  </div>
+</body>
+</html>
+   

@@ -1,0 +1,15 @@
+langchain
+langchain_community
+langchain_huggingface
+langchain-groq
+sentence-transformers
+huggingface_hub
+flask
+python-dotenv 
+beautifulsoup4
+setuptools
+langchain-pinecone 
+pinecone-client
+lxml
+requests
+torch
