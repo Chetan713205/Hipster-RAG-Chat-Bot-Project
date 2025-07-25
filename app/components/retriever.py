@@ -10,7 +10,7 @@ from app.common.custom_exception import CustomException
 
 logger = get_logger(__name__)
 
-CUSTOM_PROMPT_TEMPLATE = """ Answer the following airport related question in 2-3 lines maximum using only the information provided in the context.
+CUSTOM_PROMPT_TEMPLATE = """ Answer the following airport related question briefly using the information provided in the context.
 
 Context:
 {context}

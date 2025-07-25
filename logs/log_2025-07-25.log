@@ -1,0 +1,236 @@
+[2025-07-25 11:08:02,644] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+[2025-07-25 11:08:02,644] INFO - [33mPress CTRL+C to quit[0m
+[2025-07-25 11:08:57,792] INFO - 127.0.0.1 - - [25/Jul/2025 11:08:57] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:09:41,598] INFO - Loading vector store for context
+[2025-07-25 11:09:41,599] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:09:41,604] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:09:58,252] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:10:04,575] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:10:09,387] INFO - Loading existing vectorstore...
+[2025-07-25 11:10:10,715] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:10:16,809] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:10:16,811] INFO - Successfully created the QA chain
+[2025-07-25 11:10:25,395] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:10:25,620] INFO - 127.0.0.1 - - [25/Jul/2025 11:10:25] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:10:25,633] INFO - 127.0.0.1 - - [25/Jul/2025 11:10:25] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:11:14,819] INFO - Loading vector store for context
+[2025-07-25 11:11:14,820] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:11:14,844] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:11:21,302] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:11:26,746] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:11:30,422] INFO - Loading existing vectorstore...
+[2025-07-25 11:11:30,430] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:11:33,614] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:11:33,616] INFO - Successfully created the QA chain
+[2025-07-25 11:11:39,172] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:11:39,179] INFO - 127.0.0.1 - - [25/Jul/2025 11:11:39] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:11:39,195] INFO - 127.0.0.1 - - [25/Jul/2025 11:11:39] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:20:04,163] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+[2025-07-25 11:20:04,169] INFO - [33mPress CTRL+C to quit[0m
+[2025-07-25 11:20:26,044] INFO - 127.0.0.1 - - [25/Jul/2025 11:20:26] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:20:55,752] INFO - Loading vector store for context
+[2025-07-25 11:20:55,752] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:20:55,756] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:21:14,134] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:21:19,877] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:21:23,936] INFO - Loading existing vectorstore...
+[2025-07-25 11:21:24,730] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:21:31,179] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:21:31,183] INFO - Successfully created the QA chain
+[2025-07-25 11:21:40,960] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:21:41,094] INFO - 127.0.0.1 - - [25/Jul/2025 11:21:41] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:21:41,107] INFO - 127.0.0.1 - - [25/Jul/2025 11:21:41] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:22:13,696] INFO - Loading vector store for context
+[2025-07-25 11:22:13,698] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:22:13,707] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:22:19,544] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:22:24,687] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:22:28,833] INFO - Loading existing vectorstore...
+[2025-07-25 11:22:28,841] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:22:33,862] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:22:33,863] INFO - Successfully created the QA chain
+[2025-07-25 11:22:40,094] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:22:40,102] INFO - 127.0.0.1 - - [25/Jul/2025 11:22:40] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:22:40,115] INFO - 127.0.0.1 - - [25/Jul/2025 11:22:40] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:23:10,439] INFO - Loading vector store for context
+[2025-07-25 11:23:10,439] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:23:10,443] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:23:15,850] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:23:21,343] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:23:25,179] INFO - Loading existing vectorstore...
+[2025-07-25 11:23:25,186] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:23:29,189] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:23:29,190] INFO - Successfully created the QA chain
+[2025-07-25 11:23:34,213] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:23:34,222] INFO - 127.0.0.1 - - [25/Jul/2025 11:23:34] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:23:34,235] INFO - 127.0.0.1 - - [25/Jul/2025 11:23:34] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:24:32,044] INFO - Loading vector store for context
+[2025-07-25 11:24:32,044] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:24:32,047] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:24:38,757] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:24:44,646] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:24:48,251] INFO - Loading existing vectorstore...
+[2025-07-25 11:24:48,259] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:24:51,377] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:24:51,378] INFO - Successfully created the QA chain
+[2025-07-25 11:24:56,475] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:24:56,484] INFO - 127.0.0.1 - - [25/Jul/2025 11:24:56] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:24:56,500] INFO - 127.0.0.1 - - [25/Jul/2025 11:24:56] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:25:33,442] INFO - Loading vector store for context
+[2025-07-25 11:25:33,443] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:25:33,447] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:25:38,826] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:25:43,889] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:25:47,009] INFO - Loading existing vectorstore...
+[2025-07-25 11:25:47,016] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:25:52,198] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:25:52,199] INFO - Successfully created the QA chain
+[2025-07-25 11:25:58,538] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:25:58,548] INFO - 127.0.0.1 - - [25/Jul/2025 11:25:58] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:25:58,792] INFO - 127.0.0.1 - - [25/Jul/2025 11:25:58] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:28:59,384] INFO - Loading vector store for context
+[2025-07-25 11:28:59,386] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:28:59,398] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:29:05,764] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:29:11,351] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:29:15,734] INFO - Loading existing vectorstore...
+[2025-07-25 11:29:15,744] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:29:19,652] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:29:19,664] INFO - Successfully created the QA chain
+[2025-07-25 11:29:25,652] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:29:25,663] INFO - 127.0.0.1 - - [25/Jul/2025 11:29:25] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:29:25,679] INFO - 127.0.0.1 - - [25/Jul/2025 11:29:25] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:30:05,307] INFO - Loading vector store for context
+[2025-07-25 11:30:05,307] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:30:05,317] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:30:10,287] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:30:15,323] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:30:18,583] INFO - Loading existing vectorstore...
+[2025-07-25 11:30:18,590] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:30:21,820] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:30:21,821] INFO - Successfully created the QA chain
+[2025-07-25 11:30:25,884] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:30:25,891] INFO - 127.0.0.1 - - [25/Jul/2025 11:30:25] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:30:25,902] INFO - 127.0.0.1 - - [25/Jul/2025 11:30:25] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:30:50,694] INFO - 127.0.0.1 - - [25/Jul/2025 11:30:50] "[32mGET /clear HTTP/1.1[0m" 302 -
+[2025-07-25 11:30:50,713] INFO - 127.0.0.1 - - [25/Jul/2025 11:30:50] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:31:12,671] INFO - Loading vector store for context
+[2025-07-25 11:31:12,671] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:31:12,677] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:31:17,698] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:31:23,216] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:31:26,999] INFO - Loading existing vectorstore...
+[2025-07-25 11:31:27,007] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:31:32,141] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:31:32,142] INFO - Successfully created the QA chain
+[2025-07-25 11:31:36,901] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:31:36,908] INFO - 127.0.0.1 - - [25/Jul/2025 11:31:36] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:31:36,918] INFO - 127.0.0.1 - - [25/Jul/2025 11:31:36] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:32:02,789] INFO - Loading vector store for context
+[2025-07-25 11:32:02,790] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:32:02,794] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:32:07,678] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:32:12,620] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:32:15,633] INFO - Loading existing vectorstore...
+[2025-07-25 11:32:15,638] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:32:18,492] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:32:18,495] INFO - Successfully created the QA chain
+[2025-07-25 11:32:22,529] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:32:22,538] INFO - 127.0.0.1 - - [25/Jul/2025 11:32:22] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:32:22,549] INFO - 127.0.0.1 - - [25/Jul/2025 11:32:22] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:33:25,461] INFO - Loading vector store for context
+[2025-07-25 11:33:25,462] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:33:25,465] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:33:31,388] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:33:36,164] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:33:40,268] INFO - Loading existing vectorstore...
+[2025-07-25 11:33:40,275] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:33:43,989] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:33:43,990] INFO - Successfully created the QA chain
+[2025-07-25 11:33:48,953] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:33:48,962] INFO - 127.0.0.1 - - [25/Jul/2025 11:33:48] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:33:48,974] INFO - 127.0.0.1 - - [25/Jul/2025 11:33:48] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:35:24,706] INFO - Loading vector store for context
+[2025-07-25 11:35:24,709] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:35:24,714] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:35:37,341] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:35:43,382] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:35:47,248] INFO - Loading existing vectorstore...
+[2025-07-25 11:35:47,254] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:35:51,504] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:35:51,508] INFO - Successfully created the QA chain
+[2025-07-25 11:35:56,114] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:35:56,124] INFO - 127.0.0.1 - - [25/Jul/2025 11:35:56] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:35:56,138] INFO - 127.0.0.1 - - [25/Jul/2025 11:35:56] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:36:43,017] INFO - Loading vector store for context
+[2025-07-25 11:36:43,018] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:36:43,023] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:36:48,292] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:36:53,838] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:36:57,433] INFO - Loading existing vectorstore...
+[2025-07-25 11:36:57,438] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:37:01,101] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:37:01,103] INFO - Successfully created the QA chain
+[2025-07-25 11:37:05,099] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:37:05,106] INFO - 127.0.0.1 - - [25/Jul/2025 11:37:05] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:37:05,130] INFO - 127.0.0.1 - - [25/Jul/2025 11:37:05] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:38:08,076] INFO - Loading vector store for context
+[2025-07-25 11:38:08,077] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:38:08,083] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:38:14,852] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:38:20,472] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:38:24,853] INFO - Loading existing vectorstore...
+[2025-07-25 11:38:24,862] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:38:28,494] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:38:28,496] INFO - Successfully created the QA chain
+[2025-07-25 11:38:33,227] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:38:33,236] INFO - 127.0.0.1 - - [25/Jul/2025 11:38:33] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:38:33,258] INFO - 127.0.0.1 - - [25/Jul/2025 11:38:33] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:44:14,819] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+[2025-07-25 11:44:14,820] INFO - [33mPress CTRL+C to quit[0m
+[2025-07-25 11:51:32,369] INFO - 127.0.0.1 - - [25/Jul/2025 11:51:32] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:52:07,304] INFO - Loading vector store for context
+[2025-07-25 11:52:07,305] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:52:07,309] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:52:31,678] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:52:37,627] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:52:42,021] INFO - Loading existing vectorstore...
+[2025-07-25 11:52:43,015] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:52:51,797] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:52:51,822] INFO - Successfully created the QA chain
+[2025-07-25 11:52:59,778] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:52:59,904] INFO - 127.0.0.1 - - [25/Jul/2025 11:52:59] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:52:59,918] INFO - 127.0.0.1 - - [25/Jul/2025 11:52:59] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:53:23,256] INFO - Loading vector store for context
+[2025-07-25 11:53:23,258] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:53:23,263] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:53:29,526] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:53:34,862] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:53:38,564] INFO - Loading existing vectorstore...
+[2025-07-25 11:53:38,569] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:53:43,084] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:53:43,085] INFO - Successfully created the QA chain
+[2025-07-25 11:53:47,299] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:53:47,303] INFO - 127.0.0.1 - - [25/Jul/2025 11:53:47] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:53:47,315] INFO - 127.0.0.1 - - [25/Jul/2025 11:53:47] "GET / HTTP/1.1" 200 -
+[2025-07-25 11:54:04,677] INFO - Loading vector store for context
+[2025-07-25 11:54:04,678] INFO - Initializing our Huggingface embedding model
+[2025-07-25 11:54:04,685] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:54:10,080] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-25 11:54:15,863] INFO - Huggingface embedding model loaded successfully....
+[2025-07-25 11:54:19,245] INFO - Loading existing vectorstore...
+[2025-07-25 11:54:19,252] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-25 11:54:24,270] INFO - LLM loaded successfully from Groq.
+[2025-07-25 11:54:24,275] INFO - Successfully created the QA chain
+[2025-07-25 11:54:28,517] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-25 11:54:28,527] INFO - 127.0.0.1 - - [25/Jul/2025 11:54:28] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-25 11:54:28,538] INFO - 127.0.0.1 - - [25/Jul/2025 11:54:28] "GET / HTTP/1.1" 200 -
