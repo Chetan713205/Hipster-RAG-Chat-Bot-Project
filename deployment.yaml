@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: ml-app-container
-        image: gcr.io/mlops-new-447207/rag-project:latest
+        image: gcr.io/gen-lang-client-0389229415/rag-project:latest
         ports:
         - containerPort: 5000  # Replace with the port your app listens on
 ---
