@@ -1,0 +1,19 @@
+[2025-07-26 09:57:43,886] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+[2025-07-26 09:57:43,911] INFO - [33mPress CTRL+C to quit[0m
+[2025-07-26 09:58:24,125] INFO - 127.0.0.1 - - [26/Jul/2025 09:58:24] "GET / HTTP/1.1" 200 -
+[2025-07-26 09:58:25,139] INFO - 127.0.0.1 - - [26/Jul/2025 09:58:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-07-26 09:58:42,559] INFO - Loading vector store for context
+[2025-07-26 09:58:42,559] INFO - Initializing our Huggingface embedding model
+[2025-07-26 09:58:42,562] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-26 09:58:55,790] INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+[2025-07-26 09:59:00,464] INFO - Huggingface embedding model loaded successfully....
+[2025-07-26 09:59:03,226] INFO - Loading existing vectorstore...
+[2025-07-26 09:59:04,700] INFO - Loading LLM from Groq using LLaMA3 model...
+[2025-07-26 09:59:09,190] INFO - LLM loaded successfully from Groq.
+[2025-07-26 09:59:09,191] INFO - Successfully created the QA chain
+[2025-07-26 09:59:16,940] INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-07-26 09:59:17,064] INFO - 127.0.0.1 - - [26/Jul/2025 09:59:17] "[32mPOST / HTTP/1.1[0m" 302 -
+[2025-07-26 09:59:17,092] INFO - 127.0.0.1 - - [26/Jul/2025 09:59:17] "GET / HTTP/1.1" 200 -

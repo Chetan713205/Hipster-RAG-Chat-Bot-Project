@@ -24,7 +24,6 @@ pipeline {
                     python -m venv ${VENV_DIR}
                     . ${VENV_DIR}/bin/activate
                     pip install --upgrade pip
-                    pip install -e .
                     pip install  dvc
                     '''
                 }
@@ -37,11 +36,15 @@ pipeline {
                     script{
                         echo '..... Build and Push Image to GCR .....'
                         sh '''
+                        set -e
                         export PATH=$PATH:${GCLOUD_PATH}
                         gcloud auth activate-service-account --key-file=\"${GOOGLE_APPLICATION_CREDENTIALS}\"
                         gcloud config set project ${GCP_PROJECT}
                         gcloud auth configure-docker --quiet
-                        docker build -t gcr.io/${GCP_PROJECT}/rag-project:latest .
+                        docker build -f Dockerfile \
+                            --cache-from gcr.io/${GCP_PROJECT}/rag-project:latest \
+                            -t gcr.io/${GCP_PROJECT}/rag-project:latest .
+
                         docker push gcr.io/${GCP_PROJECT}/rag-project:latest
                         '''
                     }
