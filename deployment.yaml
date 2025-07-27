@@ -17,6 +17,37 @@ spec:
         image: gcr.io/gen-lang-client-0389229415/rag-project:latest
         ports:
         - containerPort: 5000  # Replace with the port your app listens on
+        env:
+          - name: HF_TOKEN
+            valueFrom:
+              secretKeyRef:
+                name: ml-app-secrets
+                key: HF_TOKEN
+          - name: HUGGINGFACEHUB_API_TOKEN
+            valueFrom:
+              secretKeyRef:
+                name: ml-app-secrets
+                key: HUGGINGFACEHUB_API_TOKEN
+          - name: HUGGINGFACE_REPO_ID
+            valueFrom:
+              secretKeyRef:
+                name: ml-app-secrets
+                key: HUGGINGFACE_REPO_ID
+          - name: PINECONE_API_KEY
+            valueFrom:
+              secretKeyRef:
+                name: ml-app-secrets
+                key: PINECONE_API_KEY
+          - name: PINECONE_INDEX_NAME
+            valueFrom:
+              secretKeyRef:
+                name: ml-app-secrets
+                key: PINECONE_INDEX_NAME
+          - name: GROQ_API_KEY
+            valueFrom:
+              secretKeyRef:
+                name: ml-app-secrets
+                key: GROQ_API_KEY
 ---
 apiVersion: v1
 kind: Service

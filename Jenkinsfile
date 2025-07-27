@@ -54,7 +54,13 @@ pipeline {
 
         stage('Deploying to Kubernetes'){
             steps{
-                withCredentials([file(credentialsId:'gcp-key' , variable: 'GOOGLE_APPLICATION_CREDENTIALS' )]){
+                withCredentials([file(credentialsId:'gcp-key' , variable: 'GOOGLE_APPLICATION_CREDENTIALS' ),
+                                 string(credentialsId: 'HF_TOKEN', variable: 'HF_TOKEN'),
+                                 string(credentialsId: 'HUGGINGFACE_API_TOKEN', variable: 'HUGGINGFACEHUB_API_TOKEN'),
+                                 string(credentialsId: 'HUGGINGFACE_REPO_ID', variable: 'HUGGINGFACE_REPO_ID'),
+                                 string(credentialsId: 'PINECONE_API_KEY', variable: 'PINECONE_API_KEY'),
+                                 string(credentialsId: 'PINECONE_INDEX_NAME', variable: 'PINECONE_INDEX_NAME'),
+                                 string(credentialsId: 'GROQ_API_KEY', variable: 'GROQ_API_KEY')]){
                     script{
                         echo '..... Deploying to Kubernetes .....'
                         sh '''
@@ -62,6 +68,14 @@ pipeline {
                         gcloud auth activate-service-account --key-file=\"${GOOGLE_APPLICATION_CREDENTIALS}\"
                         gcloud config set project ${GCP_PROJECT}
                         gcloud container clusters get-credentials rag-app-cluster --region us-central1
+
+                        kubectl create secret generic ml-app-secrets \
+                        --from-literal=HF_TOKEN="${HF_TOKEN}" \
+                        --from-literal=HUGGINGFACEHUB_API_TOKEN="${HUGGINGFACEHUB_API_TOKEN}" \
+                        --from-literal=PINECONE_API_KEY="${PINECONE_API_KEY}" \
+                        --from-literal=GROQ_API_KEY="${GROQ_API_KEY}" \
+                        --dry-run=client -o yaml | kubectl apply -f -
+                        
                         kubectl apply -f deployment.yaml
                         '''
                     }
