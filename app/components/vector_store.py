@@ -13,31 +13,38 @@ logger = get_logger(__name__)
 # Function to load existing vector store
 def load_vector_store():
     try:
+        logger.info("Initializing embedding model...")
         embedding_model = get_embedding_model()
+        if not embedding_model:
+            raise CustomException("Embedding model not loaded")
         
-        # Initialize Pinecone client
+        logger.info(f"Initializing Pinecone with API key: {'*' * len(PINECONE_API_KEY) if PINECONE_API_KEY else 'MISSING'}")
         pc = Pinecone(api_key=PINECONE_API_KEY)
         
-        # Check if index exists
-        if PINECONE_INDEX_NAME in [index.name for index in pc.list_indexes()]:
-            logger.info("Loading existing vectorstore...")
-            
-            # Get the index
-            index = pc.Index(PINECONE_INDEX_NAME)
-            
-            # Create PineconeVectorStore from existing index
-            return PineconeVectorStore(
-                index=index,
-                embedding=embedding_model,
-                text_key="text"
-            )
-        else:
-            logger.warning("No vector store found..")
+        logger.info("Listing available indexes...")
+        indexes = pc.list_indexes()
+        index_names = [index.name for index in indexes]
+        logger.info(f"Available indexes: {index_names}")
+        
+        if PINECONE_INDEX_NAME not in index_names:
+            logger.error(f"Index {PINECONE_INDEX_NAME} not found in available indexes")
             return None
+            
+        logger.info(f"Loading index {PINECONE_INDEX_NAME}...")
+        index = pc.Index(PINECONE_INDEX_NAME)
+        
+        logger.info("Creating PineconeVectorStore...")
+        vector_store = PineconeVectorStore(
+            index=index,
+            embedding=embedding_model,
+            text_key="text"
+        )
+        
+        logger.info("Vector store loaded successfully")
+        return vector_store
 
     except Exception as e:
-        error_message = CustomException("Failed to load vectorstore", e)
-        logger.error(str(error_message))
+        logger.error(f"Failed to load vectorstore. Error details: {str(e)}", exc_info=True)
         return None
 
 # Create new Vector Store Funtion
