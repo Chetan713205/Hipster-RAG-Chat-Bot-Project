@@ -75,7 +75,7 @@ pipeline {
                         --from-literal=HF_TOKEN="${HF_TOKEN}" \
                         --from-literal=HUGGINGFACEHUB_API_TOKEN="${HUGGINGFACEHUB_API_TOKEN}" \
                         --from-literal=PINECONE_API_KEY="${PINECONE_API_KEY}" \
-                        --from-literal=PINECONE_INDEX_NAME="${PINECONE_INDEX_NAME}" \ 
+                        --from-literal=PINECONE_INDEX_NAME="${PINECONE_INDEX_NAME}" \
                         --from-literal=HUGGINGFACE_REPO_ID="${HUGGINGFACE_REPO_ID}" \
                         --from-literal=GROQ_API_KEY="${GROQ_API_KEY}" \
                         --dry-run=client -o yaml | kubectl apply -f -
