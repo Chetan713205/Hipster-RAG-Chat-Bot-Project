@@ -18,6 +18,11 @@ spec:
         ports:
         - containerPort: 5000  # Replace with the port your app listens on
         env:
+          - name: HUGGINGFACE_API_TOKEN
+            valueFrom:
+              secretKeyRef:
+                name: ml-app-secrets
+                key: HUGGINGFACE_API_TOKEN
           - name: HF_TOKEN
             valueFrom:
               secretKeyRef:
