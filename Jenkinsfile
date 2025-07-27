@@ -55,7 +55,7 @@ pipeline {
         stage('Deploying to Kubernetes'){
             steps{
                 withCredentials([file(credentialsId:'gcp-key' , variable: 'GOOGLE_APPLICATION_CREDENTIALS' ),
-                                 string(credentialsId: 'HUGGINGFACE_API_TOKEN', variable: 'HUGGINGFACE_API_TOKEN')
+                                 string(credentialsId: 'HUGGINGFACE_API_TOKEN', variable: 'HUGGINGFACE_API_TOKEN'),
                                  string(credentialsId: 'HF_TOKEN', variable: 'HF_TOKEN'),
                                  string(credentialsId: 'HUGGINGFACE_API_TOKEN', variable: 'HUGGINGFACEHUB_API_TOKEN'),
                                  string(credentialsId: 'HUGGINGFACE_REPO_ID', variable: 'HUGGINGFACE_REPO_ID'),
